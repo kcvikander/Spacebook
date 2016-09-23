@@ -1,0 +1,179 @@
+@CHARSET "ISO-8859-1";
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/************** FORM CONTROL ******************/
+.form-group {
+  margin-bottom: 10px;
+}
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+  float:left;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+select.form-control {
+	height:30px;
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #3333AD;
+  border-color: #2e6da4;
+}
+/************** MAIN LAYOUT ******************/
+html, body {
+  height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+h1 {
+	font-size: 36px;
+}
+h2{
+	font-size: 24px;
+}
+h3{
+	font-size: 18px;
+}
+h1, h2, h3 {
+	padding-bottom:5px;
+}
+.container {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -40px; 
+}
+.container:after {
+  content: "";
+  display: block;
+}
+.footer, .container:after {
+  height: 40px; 
+}
+.footer {
+	background-color:#E6E6E6;
+	text-align:center;
+	font-size:10px;
+	padding-top:5px;
+}
+.hidden {
+	display:none;
+}
+.header {
+	height:100px;
+	background-color: #3333AD;
+	padding: 20px 0 0 15%;
+	color:white;
+}
+.header .slug{
+	font-style:italic;
+}
+.main.intro{
+	text-align:center;
+}
+.main {
+	width:60%;
+	margin:50px 15% 50px 15%;
+	padding: 0;
+	height:500px;
+}
+.main::after {
+	clear:both;
+}
+.main .left{
+	float:left;
+}
+.main .right {
+	float:right;
+}
+
+.main .left, .main .right{
+	width:35%;
+	padding:10px;
+}
+.instructions{
+	font-weight:bold;
+	padding-bottom:10px;
+}
+.validation {
+	border: 1px solid red;
+	padding-bottom:20px;
+}
